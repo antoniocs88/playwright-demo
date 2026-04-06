@@ -116,3 +116,4 @@ test.describe('The Internet Herokuapp Test Suite', () => {
     await expect(columnB.locator('header')).toHaveText('A');
   });
 });
+

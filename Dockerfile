@@ -26,3 +26,4 @@ RUN npm install
 
 # Por defecto lanzamos los tests
 CMD ["npx", "playwright", "test"]
+
