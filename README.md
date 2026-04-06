@@ -13,11 +13,23 @@ Este proyecto es una estructura base para automatización de pruebas con **Playw
 - `docker-compose.yml`: Orquestación del contenedor.
 - `.gitignore`: Archivos excluidos de control de versiones (node_modules, reportes, etc).
 
-## 🛠️ Ejecución
-Para lanzar los 10 tests automatizados, simplemente ejecuta:
+## 🛠️ Flujo de Trabajo (Build & Run)
+
+Este proyecto separa el proceso de construcción de la imagen del de ejecución de los tests:
+
+### 1. Construir la imagen del contenedor
+Ejecuta esto la primera vez o cuando realices cambios en el `package.json`:
+```bash
+docker-compose build
+```
+
+### 2. Ejecutar las pruebas
+Lanza la suite de tests (se ejecutará automáticamente en base al `Dockerfile`):
 ```bash
 docker-compose up
 ```
+> [!TIP]
+> Si deseas ejecutar los tests sin que Docker intente buscar cambios, puedes usar `docker-compose up --no-build`.
 
 ## 🧪 Tests Incluidos (10/10 Pasando)
 1.  **Navegación**: Validación de carga de Home.

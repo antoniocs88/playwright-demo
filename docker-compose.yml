@@ -1,12 +1,10 @@
 services:
   playwright:
-    image: mcr.microsoft.com/playwright:v1.42.1-jammy
+    build: .
     working_dir: /app
     volumes:
       - ./:/app
       - app-node-modules:/app/node_modules
-    command: >
-      bash -c "npm install && npx playwright test"
 
 volumes:
   app-node-modules:
