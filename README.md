@@ -6,7 +6,6 @@ Este proyecto es una estructura base para automatización de pruebas con **Playw
 - **Framework**: Playwright (TypeScript)
 - **Ejecución**: Docker Compose (Imagen oficial de Playwright)
 - **Sitio de Pruebas**: [The Internet (Herokuapp)](https://the-internet.herokuapp.com/)
-  - *Nota: Se cambió de DemoQA a Herokuapp por la alta inestabilidad y anuncios de DemoQA que causaban fallos falsos positivos.*
 
 ## 📂 Estructura del Proyecto
 - `tests/`: Contiene los archivos de prueba (.spec.ts).
