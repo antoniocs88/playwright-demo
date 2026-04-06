@@ -1,0 +1,12 @@
+{
+  "name": "playwright-demoqa",
+  "version": "1.0.0",
+  "description": "Automatización de tests en demoqa",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.42.1",
+    "@types/node": "^20.11.24"
+  }
+}
